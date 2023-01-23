@@ -1,8 +1,8 @@
 {
-    "$schema": "https://ons.gov.uk/csv-cubed/qube-config/v1",
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
     "title": "COVID Infection Survey",
-    "description": "Study to accurately model the UK's incidence of Covid infections across various breakdowns.",
-    "creator": "https://www.gov.uk/government/organisations/uk-health-security-agency",
+    "description": "Findings from the Coronavirus (COVID-19) Infection Survey for England.",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
     "publisher": "https://www.gov.uk/government/organisations/uk-health-security-agency",
     "columns": {
         "week": {
@@ -17,7 +17,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "percentage_pop_est"
+                "label": "Estimated average % of the population testing positive for COVID-19"
             }
         },
         "percentage_pop_est_lci": {
@@ -26,7 +26,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "Percentage Pop-Est Upper Lower Credible Interval"
+                "label": "95% Lower confidence/credible interval for percentage"
             }
         },
         "percentage_pop_est_uci": {
@@ -35,7 +35,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "Percentage Pop-Est Upper Credible Interval"
+                "label": "95% Upper confidence/credible interval for percentage"
             }
         },
         "pop_est": {
@@ -44,7 +44,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "Population Estimate"
+                "label": " Estimated average number of people testing positive for COVID-19"
             }
         },
         "pop_est_lci": {
@@ -53,7 +53,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "Pop-Est Lower Credible Interval"
+                "label": "95% Lower confidence/credible interval for number"
             }
         },
         "pop_est_uci": {
@@ -62,7 +62,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "Pop-Est Upper Credible Interval"
+                "label": "95% Upper confidence/credible interval for number"
             }
         }
     }
