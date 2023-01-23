@@ -1,0 +1,69 @@
+{
+    "$schema": "https://ons.gov.uk/csv-cubed/qube-config/v1",
+    "title": "COVID Infection Survey",
+    "description": "Study to accurately model the UK's incidence of Covid infections across various breakdowns.",
+    "creator": "https://www.gov.uk/government/organisations/uk-health-security-agency",
+    "publisher": "https://www.gov.uk/government/organisations/uk-health-security-agency",
+    "columns": {
+        "week": {
+            "type": "dimension"
+        },
+        "ons_geog_code": {
+            "type": "dimension"
+        },
+        "percentage_pop_est": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "percentage_pop_est"
+            }
+        },
+        "percentage_pop_est_lci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Percentage Pop-Est Upper Lower Credible Interval"
+            }
+        },
+        "percentage_pop_est_uci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Percentage Pop-Est Upper Credible Interval"
+            }
+        },
+        "pop_est": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Population Estimate"
+            }
+        },
+        "pop_est_lci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Pop-Est Lower Credible Interval"
+            }
+        },
+        "pop_est_uci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Pop-Est Upper Credible Interval"
+            }
+        }
+    }
+}
