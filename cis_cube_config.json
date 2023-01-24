@@ -1,15 +1,19 @@
 {
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
     "title": "COVID Infection Survey",
-    "description": "Findings from the Coronavirus (COVID-19) Infection Survey for England.",
+    "description": "Official reported estimates of the percentage of the population testing positive for COVID-19, England, 27 April 2020 to 10 January 2023",
     "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
-    "publisher": "https://www.gov.uk/government/organisations/uk-health-security-agency",
+    "publisher": "https://www.gov.uk/government/organisations/uk-health-security-agency",  
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "columns": {
         "week": {
             "type": "dimension"
         },
         "ons_geog_code": {
             "type": "dimension"
+        },
+        "unit": {
+            "label": "Count"
         },
         "percentage_pop_est": {
             "type": "observations",
