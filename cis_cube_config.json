@@ -11,10 +11,8 @@
             "label": "week"
         },
         "ons_geog_code": {
-            "type": "dimension"
-        },
-        "unit": {
-            "label": "E92000001"
+            "type": "dimension",
+            "label": "E92000001"   
         },
         "percentage_pop_est": {
             "type": "observations",
@@ -75,6 +73,7 @@
             "measure": {
                 "label": "95% Upper confidence/credible interval for number"
             }
+    
         }
     }
 }
