@@ -6,19 +6,21 @@
     "publisher": "https://www.gov.uk/government/organisations/uk-health-security-agency",  
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "columns": {
-        "week": {
-            "type": "dimension"
+        "week":  {
+            "from_template": "week",
+            "label": "week"
         },
         "ons_geog_code": {
             "type": "dimension"
         },
         "unit": {
-            "label": "Count"
+            "label": "E92000001"
         },
         "percentage_pop_est": {
             "type": "observations",
             "unit": {
-                "label": "Count"
+                "from_existing":"http://qudt.org/vocab/unit/PERCENT",
+                "label": "Percentage"
             },
             "measure": {
                 "label": "Estimated average % of the population testing positive for COVID-19"
@@ -27,7 +29,8 @@
         "percentage_pop_est_lci": {
             "type": "observations",
             "unit": {
-                "label": "Count"
+                "from_existing":"http://qudt.org/vocab/unit/PERCENT",
+                "label": "Percentage"
             },
             "measure": {
                 "label": "95% Lower confidence/credible interval for percentage"
@@ -36,7 +39,8 @@
         "percentage_pop_est_uci": {
             "type": "observations",
             "unit": {
-                "label": "Count"
+                "from_existing":"http://qudt.org/vocab/unit/PERCENT",
+                "label": "Percentage"
             },
             "measure": {
                 "label": "95% Upper confidence/credible interval for percentage"
@@ -45,6 +49,7 @@
         "pop_est": {
             "type": "observations",
             "unit": {
+                "from_existing":"https//qudt.org/vocab/unit/IN",
                 "label": "Count"
             },
             "measure": {
@@ -54,6 +59,7 @@
         "pop_est_lci": {
             "type": "observations",
             "unit": {
+                "from_existing":"https//qudt.org/vocab/unit/IN",
                 "label": "Count"
             },
             "measure": {
@@ -63,6 +69,7 @@
         "pop_est_uci": {
             "type": "observations",
             "unit": {
+                "from_existing":"https//qudt.org/vocab/unit/IN",
                 "label": "Count"
             },
             "measure": {
