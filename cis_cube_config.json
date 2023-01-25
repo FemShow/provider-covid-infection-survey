@@ -49,7 +49,7 @@
         "pop_est": {
             "type": "observations",
             "unit": {
-                "from_existing":"https//qudt.org/vocab/unit/IN",
+                "from_existing": "http://qudt.org/vocab/unit/NUM",
                 "label": "Count"
             },
             "measure": {
@@ -59,7 +59,7 @@
         "pop_est_lci": {
             "type": "observations",
             "unit": {
-                "from_existing":"https//qudt.org/vocab/unit/IN",
+                "from_existing":"http://qudt.org/vocab/unit/NUM",
                 "label": "Count"
             },
             "measure": {
@@ -69,7 +69,7 @@
         "pop_est_uci": {
             "type": "observations",
             "unit": {
-                "from_existing":"https//qudt.org/vocab/unit/IN",
+                "from_existing":"http://qudt.org/vocab/unit/NUM",
                 "label": "Count"
             },
             "measure": {
