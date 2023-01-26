@@ -12,8 +12,10 @@
         },
         "ons_geog_code": {
             "type": "dimension",
-            "label": "E92000001",   
-            "description": "http://statistics.data.gov.uk/id/statistical-geography/E92000001"  
+            "label": "Geography",   
+            "code_list": false,
+            "cell_uri_template": "http://example.com/dimensions/{+ons_geog_code}",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
         },
         "percentage_pop_est": {
             "type": "observations",
