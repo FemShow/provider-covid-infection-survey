@@ -12,7 +12,8 @@
         },
         "ons_geog_code": {
             "type": "dimension",
-            "label": "E92000001"   
+            "label": "E92000001",   
+            "description": "http://statistics.data.gov.uk/id/statistical-geography/E92000001"  
         },
         "percentage_pop_est": {
             "type": "observations",

@@ -405,241 +405,26 @@
     ],
     "rdfs:seeAlso": [
         {
-            "@id": "covid-infection-survey.csv#csvcubed-build-activity",
+            "@id": "covid-infection-survey.csv#slice/cross-measures",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/ns/prov#Activity"
-            ],
-            "http://www.w3.org/ns/prov#used": [
-                {
-                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.2.0"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Estimated average % of the population testing positive for COVID-19"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#structure",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#DataStructureDefinition",
-                "http://purl.org/linked-data/cube#ComponentSet"
-            ],
-            "http://purl.org/linked-data/cube#component": [
-                {
-                    "@id": "covid-infection-survey.csv#component/unit"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/measure-type"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-number"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-percentage"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-number"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/week"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/estimated-average-of-the-population-testing-positive-for-covid-19"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-percentage"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/e92000001"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#component/-estimated-average-number-of-people-testing-positive-for-covid-19"
-                }
+                "http://purl.org/linked-data/cube#SliceKey",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19"
-                },
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
-                },
-                {
                     "@id": "covid-infection-survey.csv#dimension/week"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-percentage"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#measure/-estimated-average-number-of-people-testing-positive-for-covid-19"
                 },
                 {
                     "@id": "covid-infection-survey.csv#dimension/e92000001"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#sliceKey": [
-                {
-                    "@id": "covid-infection-survey.csv#slice/cross-measures"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#dimension/e92000001",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "e92000001.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "E92000001"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "covid-infection-survey.csv#class/e92000001"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "95% Lower confidence/credible interval for number"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#class/week",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-number",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 20
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-percentage",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-percentage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-percentage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 11
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#component/week",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#dimension/week"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "covid-infection-survey.csv#dimension/week"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 1
                 }
             ]
         },
         {
             "@id": "covid-infection-survey.csv#component/unit",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#attribute": [
@@ -659,10 +444,13 @@
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 7
+                    "@value": 19
                 },
                 {
-                    "@value": 13
+                    "@value": 16
+                },
+                {
+                    "@value": 7
                 },
                 {
                     "@value": 4
@@ -671,18 +459,67 @@
                     "@value": 10
                 },
                 {
-                    "@value": 16
-                },
+                    "@value": 13
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#dimension/e92000001",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
                 {
-                    "@value": 19
+                    "@id": "e92000001.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "http://statistics.data.gov.uk/id/statistical-geography/E92000001"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "E92000001"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "covid-infection-survey.csv#class/e92000001"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "95% Lower confidence/credible interval for number"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
                 }
             ]
         },
         {
             "@id": "covid-infection-survey.csv#component/-estimated-average-number-of-people-testing-positive-for-covid-19",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#ComponentSpecification"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
@@ -702,219 +539,13 @@
             ]
         },
         {
-            "@id": "covid-infection-survey.csv#component/e92000001",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#dimension/e92000001"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "covid-infection-survey.csv#dimension/e92000001"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 2
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-number",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 17
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-percentage",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 8
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#measure/-estimated-average-number-of-people-testing-positive-for-covid-19",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": " Estimated average number of people testing positive for COVID-19"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#slice/cross-measures",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#SliceKey"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#dimension/week"
-                },
-                {
-                    "@id": "covid-infection-survey.csv#dimension/e92000001"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#dimension/week",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#DimensionProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "week.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "week"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "covid-infection-survey.csv#class/week"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#component/estimated-average-of-the-population-testing-positive-for-covid-19",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 5
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "95% Upper confidence/credible interval for number"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "95% Lower confidence/credible interval for percentage"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ]
-        },
-        {
-            "@id": "covid-infection-survey.csv#class/e92000001",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
             "@id": "covid-infection-survey.csv#dataset",
             "@type": [
-                "http://www.w3.org/ns/dcat#Dataset",
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#DataSet",
                 "http://www.w3.org/ns/dcat#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#Attachable"
+                "http://www.w3.org/ns/dcat#Dataset"
             ],
             "http://purl.org/dc/terms/creator": [
                 {
@@ -935,7 +566,7 @@
             "http://purl.org/dc/terms/issued": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2023-01-25T13:17:10.523206"
+                    "@value": "2023-01-26T00:34:41.954458"
                 }
             ],
             "http://purl.org/dc/terms/license": [
@@ -946,7 +577,7 @@
             "http://purl.org/dc/terms/modified": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2023-01-25T13:17:10.523206"
+                    "@value": "2023-01-26T00:34:41.954458"
                 }
             ],
             "http://purl.org/dc/terms/publisher": [
@@ -978,50 +609,314 @@
             ]
         },
         {
-            "@id": "covid-infection-survey.csv#component/measure-type",
+            "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "95% Upper confidence/credible interval for number"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/ns/prov#Activity",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.2.0"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#class/week",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#structure",
+            "@type": [
                 "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DataStructureDefinition"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "covid-infection-survey.csv#component/unit"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-number"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/-estimated-average-number-of-people-testing-positive-for-covid-19"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/measure-type"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/estimated-average-of-the-population-testing-positive-for-covid-19"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/week"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-percentage"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/e92000001"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-percentage"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-number"
+                }
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
                     "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#dimension/week"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-percentage"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#measure/-estimated-average-number-of-people-testing-positive-for-covid-19"
+                },
+                {
+                    "@id": "covid-infection-survey.csv#dimension/e92000001"
                 }
             ],
-            "http://purl.org/linked-data/cube#dimension": [
+            "http://purl.org/linked-data/cube#sliceKey": [
                 {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
+                    "@id": "covid-infection-survey.csv#slice/cross-measures"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Estimated average % of the population testing positive for COVID-19"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#measure/-estimated-average-number-of-people-testing-positive-for-covid-19",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": " Estimated average number of people testing positive for COVID-19"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-number",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-number"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 15
-                },
+                    "@value": 17
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#component/95-lower-confidence/credible-interval-for-percentage",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@value": 18
-                },
+                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
                 {
-                    "@value": 9
-                },
+                    "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 3
-                },
+                    "@value": 8
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-number",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@value": 6
-                },
+                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
                 {
-                    "@value": 12
+                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-number"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 20
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#dimension/week",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "week.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "week"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "covid-infection-survey.csv#class/week"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#component/estimated-average-of-the-population-testing-positive-for-covid-19",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "covid-infection-survey.csv#measure/estimated-average-of-the-population-testing-positive-for-covid-19"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#component/e92000001",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "covid-infection-survey.csv#dimension/e92000001"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "covid-infection-survey.csv#dimension/e92000001"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
                 }
             ]
         },
         {
             "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-percentage",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
@@ -1036,10 +931,121 @@
             ]
         },
         {
+            "@id": "covid-infection-survey.csv#component/95-upper-confidence/credible-interval-for-percentage",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-percentage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "covid-infection-survey.csv#measure/95-upper-confidence/credible-interval-for-percentage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 11
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 9
+                },
+                {
+                    "@value": 6
+                },
+                {
+                    "@value": 3
+                },
+                {
+                    "@value": 18
+                },
+                {
+                    "@value": 12
+                },
+                {
+                    "@value": 15
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#class/e92000001",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#measure/95-lower-confidence/credible-interval-for-percentage",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "95% Lower confidence/credible interval for percentage"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "covid-infection-survey.csv#component/week",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "covid-infection-survey.csv#dimension/week"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "covid-infection-survey.csv#dimension/week"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
             "@id": "covid-infection-survey.csv#dependency/week",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://rdfs.org/ns/void#Dataset"
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://rdfs.org/ns/void#dataDump": [
                 {
@@ -1055,8 +1061,8 @@
         {
             "@id": "covid-infection-survey.csv#dependency/e92000001",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://rdfs.org/ns/void#Dataset"
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://rdfs.org/ns/void#dataDump": [
                 {
@@ -1072,9 +1078,9 @@
         {
             "@id": "covid-infection-survey.csv#unit/percentage",
             "@type": [
+                "http://qudt.org/schema/qudt/Unit",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
-                "http://qudt.org/schema/qudt/Unit"
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
             ],
             "http://qudt.org/schema/qudt/isScalingOf": [
                 {
@@ -1107,9 +1113,9 @@
         {
             "@id": "covid-infection-survey.csv#unit/count",
             "@type": [
+                "http://qudt.org/schema/qudt/Unit",
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
-                "http://qudt.org/schema/qudt/Unit"
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
             ],
             "http://qudt.org/schema/qudt/isScalingOf": [
                 {
